@@ -1,0 +1,42 @@
+Instalar extension Console Ninja
+
+//================================================================
+
+Executar comando
+
+npm create vite@latest
+
+//================================================================
+
+Ajustar package.json
+
+"devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",    
+    "vite": "^5.4.1"
+}
+
+//================================================================
+
+Instalar pacotes
+
+npm i @biomejs/biome -D
+
+//================================================================
+
+Instalar pacotes
+
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+
+//================================================================
+
+Instalar extension
+
+Tailwind CSS IntelliSense
+
+//================================================================
+

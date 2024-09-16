@@ -1,0 +1,172 @@
+Criar o arquivo package.json
+
+npm init -y
+
+//================================================================
+
+Adicionar pacotes
+
+npm i typescript -D
+
+//================================================================
+
+Criar o arquvio tsconfig.json
+
+npx tsc --init
+
+//================================================================
+
+Configurar o arquivo tsconfig.json
+
+Acessar: https://github.com/tsconfig/bases
+
+Localizar a versão do node: Node 20 | @tsconfig/node20
+
+Atualizar arquivo tsconfig.json
+
+//================================================================
+
+Adicionar pacotes
+
+npm i @types/node tsx -D
+
+Criar o script no arquivo package.json
+"scripts": {
+    "dev": "tsx --env-file .env watch src/http/server.ts"
+},
+
+//================================================================
+
+Executar o comando
+
+npm run dev 
+
+//================================================================
+
+Adicionar pacotes
+
+npm i fastify
+
+//================================================================
+
+Adcionar pacotes
+
+npm i -D --save-exact @biomejs/biome
+
+Configurar o biome
+
+View -> Command Palette -> Preferences: Open Workspace Settings (JSON)
+
+Configurar o arquvivo
+
+Instalar a extension
+
+Biome
+
+//================================================================
+
+Vamos utilizar o Postgresql
+
+Uma alternativa Web -> https://neon.tech/
+
+Utilizando o Docker docker-compose.yml
+
+//================================================================
+
+Instalar pacotes
+
+npm i drizzle-orm
+npm i drizzle-kit -D
+
+Criar o arquivo drizzle.config.ts
+
+//================================================================
+
+Configurar variávies de ambiente
+
+Criar o arquivo .env na raiz do projeto
+
+DATABASE_URL = "COLOCAR O CAMINHO DO BANCO DE DADOS"
+
+Alterar o arquivo package.json
+"scripts": {
+    "dev": "tsx --env-file .env watch src/http/server.ts"
+},
+
+Instalar pacotes
+npm i zod
+
+Criar o arquivo /src/env.ts
+
+Ajustar o arquvivo drizzle.config.ts
+
+//================================================================
+
+Criar o arquivo src\db\schema.ts
+
+Excutar o comando
+
+npx drizzle-kit generate 
+
+Instalar pacotes
+
+npm i postgres
+
+Executar o comando
+
+npx drizzle-kit migrate 
+
+Executar o comando
+
+npx drizzle-kit studio 
+
+Instalar pacotes
+
+@paralleldrive/cuid2
+
+Ajustar os campos "id" no arquivo src\db\schema.ts
+
+id: text('id').primaryKey().$defaultFn(() => createId()),
+
+//================================================================
+
+Instalar pacotes
+
+npm i dayjs
+
+Criar os arquivos
+
+/src/db/index.ts
+/src/db/seed.ts
+
+Adicionar os Seeds
+
+Executar o comando
+
+npm run seed
+
+//================================================================
+
+Criar os arquivos
+
+\src\functions\create-goal.ts
+
+//================================================================
+
+Instalar pacotes
+
+npm i fastify-type-provider-zod
+
+//================================================================
+
+Instalar extension
+
+Comment tagged templates
+
+//================================================================
+
+Instalar pacotes
+
+npm i @fastify/cors
+
+//================================================================
